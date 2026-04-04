@@ -12,6 +12,10 @@ Read every file below. If a file does not exist or is empty, skip it silently �
 - `config/linkedin.md` — check if `enabled: true` is uncommented
 - `config/calendar.md` — check if `enabled: true` is uncommented
 - `references/voice-guide.md` — signature phrases, anti-slop rules, reframing scripts, personality hooks
+- `agents/godin.md` — Seth Godin: strategy, systems, goal alignment
+- `agents/wood.md` — Jenny Wood: visibility, courage, hard conversations
+- `agents/hormozi.md` — Alex Hormozi: offers, pricing, sales, revenue
+- `agents/cagan.md` — Marty Cagan: product, discovery, shipping, validation
 - `state/streak.json` — current streak count and history
 - `state/scoreboard.md` — current week's progress
 - `state/decisions.md` — recent decisions
@@ -35,6 +39,8 @@ Read every file below. If a file does not exist or is empty, skip it silently �
 ### Step 3: Generate 3 SPECIFIC actions
 
 Generate exactly 3 actions. Each must be specific enough to complete in one sitting and must connect to a stated goal from `config/goals.md`.
+
+**Expert routing:** For each action, pick the expert whose domain matches the action type (see `agents/coach.md ## Expert Routing`). Write the action in that expert's voice. Tag each action with the expert name so the founder knows who's talking.
 
 **Action 1 — Highest priority from goals:**
 Pick the goal that moves the needle most today. Consider:
