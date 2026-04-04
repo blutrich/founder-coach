@@ -56,43 +56,39 @@ This isn't a demo project. This is a system I depend on every day.
 
 ---
 
-## Quick Start
+## Get Started
 
-**Step 1:** Get Claude Code from [claude.ai/code](https://claude.ai/code) (if you don't have it)
+### 1️⃣ Get Claude Code
 
-**Step 2:** Inside Claude Code, run:
-```bash
+Download from [claude.ai/code](https://claude.ai/code). Pick one:
+- **Desktop App** — easiest, no terminal needed
+- **VS Code Extension** — if you already use VS Code
+- **CLI** — if you live in the terminal
+
+### 2️⃣ Install the plugin
+
+Open Claude Code and paste this:
+```
 /plugin marketplace add blutrich/founder-coach
 ```
+Hit enter. Done.
 
-**Step 3:** Start coaching:
-```bash
+### 3️⃣ Start coaching
+
+```
 /founder-coach
 ```
+The coach introduces itself, asks you 3 questions, and gives you Day 1's actions. Coaching in under 60 seconds.
 
-That's it. The coach introduces itself, asks you 3 quick questions, and gives you Day 1's actions. No config files to edit. No setup homework. Coaching in under 60 seconds.
+### Trouble installing?
 
-Works everywhere Claude Code runs: **CLI**, **Desktop app**, **VS Code**, **JetBrains**.
-
-### One-Line Install (recommended)
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/blutrich/founder-coach/main/install.sh | bash
-```
-
-Then inside Claude Code:
-```bash
-/plugin                # select founder-coach → Install
-/founder-coach         # Day 1 starts
-```
-
-### Manual Install
-
+If step 2 gives an error, paste this instead:
 ```bash
 git clone https://github.com/blutrich/founder-coach.git ~/.claude/plugins/marketplaces/founder-coach
 ```
+Then inside Claude Code run `/plugin` (select founder-coach → Install), then `/founder-coach`.
 
-**GitHub:** [github.com/blutrich/founder-coach](https://github.com/blutrich/founder-coach)
+Stuck? [Message me on LinkedIn](https://linkedin.com/in/oferblutrich).
 
 ### Daily Use
 
