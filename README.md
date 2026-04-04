@@ -74,6 +74,20 @@ That's it. The coach introduces itself, asks you 3 quick questions, and gives yo
 
 Works everywhere Claude Code runs: **CLI**, **Desktop app**, **VS Code**, **JetBrains**.
 
+### Manual Install (if marketplace fails)
+
+If you get a marketplace cache error, install manually:
+
+```bash
+# Clone the repo
+git clone https://github.com/blutrich/founder-coach.git ~/.claude/plugins/marketplaces/founder-coach
+
+# Inside Claude Code:
+/plugin
+# Select founder-coach → Install
+/founder-coach
+```
+
 **GitHub:** [github.com/blutrich/founder-coach](https://github.com/blutrich/founder-coach)
 
 ### Daily Use
