@@ -1,8 +1,8 @@
 ---
-name: coach
+name: founder-coach
 description: |
-  Daily AI coaching system for founders with compounding memory. Run /coach every morning for 3 specific actions tied to your goals. Tracks streaks, logs decisions, drafts LinkedIn posts, reviews your week with real percentage scores. Memory compounds over time — the coach gets smarter the more you use it. Supports cron mode and cross-computer sync.
-  Use this skill whenever the user says /coach, asks for daily actions, wants accountability, mentions their streak, goals, scoreboard, decisions, or weekly review, or asks what they should work on today.
+  Daily AI coaching system for founders with compounding memory. Run /founder-coach every morning for 3 specific actions tied to your goals. Tracks streaks, logs decisions, drafts LinkedIn posts, reviews your week with real percentage scores. Memory compounds over time — the coach gets smarter the more you use it. Supports cron mode and cross-computer sync.
+  Use this skill whenever the user says /founder-coach, asks for daily founder actions, wants founder accountability, mentions their streak, goals, scoreboard, decisions, or weekly review, or asks what they should work on today.
 user_invocable: true
 ---
 

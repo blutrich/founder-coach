@@ -24,7 +24,7 @@ Every week it reflects: are your actions moving your goals, or are you just busy
 
 It remembers everything. It tracks your streak. It won't let you revisit decisions you already made. It drafts your LinkedIn posts from what you actually built, not what sounds impressive.
 
-One command: `/coach`
+One command: `/founder-coach`
 
 ---
 
@@ -65,11 +65,11 @@ This isn't a demo project. This is a system I depend on every day.
 /reload-plugins
 
 # First run — creates your config files
-/coach
+/founder-coach
 
 # Fill in config/goals.md (required) and the rest (optional)
 # Then run again — Day 1 starts
-/coach
+/founder-coach
 ```
 
 ### First Run
@@ -88,11 +88,11 @@ Open them. Uncomment the lines that matter. Be honest about your weakness. That'
 
 ### Daily Use
 
-**Morning:** `/coach` gives you 3 actions. Go do them.
+**Morning:** `/founder-coach` gives you 3 actions. Go do them.
 
-**Evening:** `/coach` asks what you completed. Updates your scoreboard.
+**Evening:** `/founder-coach` asks what you completed. Updates your scoreboard.
 
-**Friday:** `/coach` runs your weekly review. Score, patterns, next week's priorities.
+**Friday:** `/founder-coach` runs your weekly review. Score, patterns, next week's priorities.
 
 ---
 
@@ -150,7 +150,7 @@ founder-coach/
 
 Note: `config/` and `state/` directories are created on first run. They are not included in the repository — each user gets their own.
 
-**Memory:** The coach writes to Claude Code's native memory directory with proper YAML frontmatter. Your coaching context is available across all Claude Code conversations, not just `/coach`. Structured state (streak, scoreboard, decisions) lives in `state/` files for precision.
+**Memory:** The coach writes to Claude Code's native memory directory with proper YAML frontmatter. Your coaching context is available across all Claude Code conversations, not just `/founder-coach`. Structured state (streak, scoreboard, decisions) lives in `state/` files for precision.
 
 **No dependencies.** No external services. No accounts. No subscriptions. Everything lives on your machine.
 
@@ -171,7 +171,7 @@ I'm looking for 10 founders who recognize themselves in this:
 - You've made the same decision three times this month.
 - You have a LinkedIn draft from two weeks ago that you never published.
 
-If that's you, install it. Run `/coach` tomorrow morning. Tell me what happens after a week.
+If that's you, install it. Run `/founder-coach` tomorrow morning. Tell me what happens after a week.
 
 ---
 
@@ -201,4 +201,4 @@ With the editorial assistance of Claude, who challenged the thinking but didn't 
 >
 > Showing up without a strategy is like building without a plan. It might work out, but it's unlikely.
 >
-> `/coach` is the plan. Run it tomorrow morning.
+> `/founder-coach` is the plan. Run it tomorrow morning.
