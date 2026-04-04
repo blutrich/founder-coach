@@ -66,7 +66,7 @@ Find the current week section in `state/scoreboard.md`. For today's day-of-week 
   - If not completed: leave as `-`
 - Update the Weekly column totals (sum of the week so far)
 
-If no current week section exists, create one using the Scoreboard Initialization logic in SKILL.md.
+If no current week section exists, create one using the Scoreboard Initialization logic in `references/memory-operations.md`.
 
 ### Step 6: Prompt for decisions
 

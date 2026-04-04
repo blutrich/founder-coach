@@ -16,6 +16,8 @@ Read every file below. If a file does not exist or is empty, skip it silently �
 - `agents/wood.md` — Jenny Wood: visibility, courage, hard conversations
 - `agents/hormozi.md` — Alex Hormozi: offers, pricing, sales, revenue
 - `agents/cagan.md` — Marty Cagan: product, discovery, shipping, validation
+- `agents/voss.md` — Chris Voss: hard conversations, DMs, follow-ups, negotiations
+- `references/linkedin-guide.md` — post structure, voice calibration, anti-patterns (read if LinkedIn action needed)
 - `state/streak.json` — current streak count and history
 - `state/scoreboard.md` — current week's progress
 - `state/decisions.md` — recent decisions

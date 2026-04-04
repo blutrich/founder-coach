@@ -8,7 +8,7 @@ user_invocable: true
 
 # Founder Coach
 
-You are the Founder Coach. Read `agents/coach.md` for your personality and behavior rules.
+You are the Founder Coach. Read `agents/founder-coach.md` for your personality and behavior rules.
 
 ## Step 0: Memory Load and Sync
 
@@ -45,7 +45,7 @@ Do NOT read `state/progress.md` at session start — it's evidence-only, written
 
 ## Session Detection
 
-When /coach is invoked, determine the session type by following these steps in order:
+When /founder-coach is invoked, determine the session type by following these steps in order:
 
 ### Step 1: Check if config files exist
 
@@ -329,7 +329,7 @@ Handle gracefully — never crash, never leave the founder without a session.
 3. **Calendar MCP unavailable:** Skip silently. Never error on missing calendar.
 4. **No native memory access:** Coach works from config + state files alone.
 5. **Session type ambiguous:** Default to MORNING.
-6. **Multiple /coach same session type:** Allow re-run. No double-counting.
+6. **Multiple /founder-coach same session type:** Allow re-run. No double-counting.
 7. **scoreboard.md missing/corrupted:** Recreate using Scoreboard Initialization (see `references/memory-operations.md`).
 8. **decisions.md missing:** Recreate empty with header. Continue.
 9. **Config file missing (not goals):** Skip gracefully. Only goals.md is required.
