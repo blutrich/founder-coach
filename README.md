@@ -61,7 +61,7 @@ This isn't a demo project. This is a system I depend on every day.
 ### 1️⃣ Get Claude Code
 
 Download from [claude.ai/code](https://claude.ai/code). Pick one:
-- **Desktop App** — easiest, no terminal needed
+- **Desktop App / Cowork** — easiest, no terminal needed
 - **VS Code Extension** — if you already use VS Code
 - **CLI** — if you live in the terminal
 
