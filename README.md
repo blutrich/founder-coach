@@ -58,17 +58,23 @@ This isn't a demo project. This is a system I depend on every day.
 
 ## Quick Start
 
-```bash
-# Inside Claude Code (CLI, Desktop, or VS Code extension):
-/plugin marketplace add blutrich/founder-coach
+**Step 1:** Get Claude Code from [claude.ai/code](https://claude.ai/code) (if you don't have it)
 
-# That's it. Run your first session:
+**Step 2:** Inside Claude Code, run:
+```bash
+/plugin marketplace add blutrich/founder-coach
+```
+
+**Step 3:** Start coaching:
+```bash
 /founder-coach
 ```
 
-Two commands. The coach introduces itself, asks you 3 quick questions, and gives you Day 1's actions. No config files to edit. No setup homework. You're coaching in under 60 seconds.
+That's it. The coach introduces itself, asks you 3 quick questions, and gives you Day 1's actions. No config files to edit. No setup homework. Coaching in under 60 seconds.
 
 Works everywhere Claude Code runs: **CLI**, **Desktop app**, **VS Code**, **JetBrains**.
+
+**GitHub:** [github.com/blutrich/founder-coach](https://github.com/blutrich/founder-coach)
 
 ### Daily Use
 
