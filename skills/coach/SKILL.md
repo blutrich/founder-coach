@@ -137,6 +137,10 @@ Here's how this works:
                 Miss a day? Resets to zero.
                 Brutal? Yes. Effective? Also yes.
 
+  ⚡ Superpowers Optional: connect Google Calendar and Gmail
+                and I'll read your schedule, prep for meetings,
+                and make sure no important email slips through.
+
 Ready? Let's get to know each other.
 ```
 
@@ -161,6 +165,45 @@ The founder can answer all at once or one at a time. Extract:
 If they give you extra goals (up to 3), capture them all.
 
 If they share context about their company, product, or situation — great. Use it in the morning session. But don't interrogate them. Keep it light.
+
+### Step 2b: Suggest superpowers (after main questions)
+
+After getting the core answers, mention the optional integrations casually. Don't make it feel like setup — make it feel like unlocking bonus features.
+
+Display something like:
+```
+Got it. Quick bonus round — you can skip all of these:
+
+📅 Google Calendar — If you have the Google Calendar MCP connected,
+   I can read your schedule, prep you for meetings, and find deep
+   work windows. Want me to check? (yes/skip)
+
+📧 Gmail — If you have the Gmail MCP connected, I can scan for
+   important threads, draft follow-ups, and make sure nothing
+   slips through. Want me to check? (yes/skip)
+
+No worries if you skip these — they're power-ups, not requirements.
+You can always add them later.
+```
+
+**If they say yes to Calendar:**
+- Attempt to call the Google Calendar MCP tool (e.g., list calendars or list today's events)
+- If it works: "Calendar connected! I'll factor your schedule into tomorrow's actions."
+- Write `config/calendar.md` with `enabled: true` and `provider: google`
+- If it fails: "Looks like the Google Calendar MCP isn't set up yet. No problem — you can add it anytime. I'll coach without it."
+
+**If they say yes to Gmail:**
+- Attempt to call the Gmail MCP tool (e.g., get profile)
+- If it works: "Gmail connected! I'll keep an eye on important threads."
+- Write to `config/identity.md`: uncomment and set `gmail: true`
+- If it fails: "Gmail MCP isn't connected yet. Skip for now — you can add it later."
+
+**If they skip:** Move on immediately. No guilt, no "are you sure?"
+
+**How the coach uses these after onboarding:**
+- **Calendar in morning session:** Read today's events. Adjust actions around meetings. Flag empty mornings as deep work opportunities. Prep notes for important meetings.
+- **Gmail in morning session:** Scan for threads that need a reply. Flag follow-ups on outreach actions. "You emailed [person] 3 days ago — no reply yet. Follow up today."
+- **Gmail in evening session:** Check if outreach emails were actually sent (verify action completion).
 
 ### Step 3: Create config files from answers
 

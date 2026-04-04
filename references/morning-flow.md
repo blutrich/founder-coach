@@ -19,12 +19,18 @@ Read every file below. If a file does not exist or is empty, skip it silently �
 - `state/context.md` — (already loaded in Step 0) current focus, last session details, founder profile
 - `state/patterns.md` — (already loaded in Step 0) coaching patterns and avoidance behaviors
 
-### Step 2: Calendar check (optional)
+### Step 2: Calendar + Gmail check (optional)
 
-If `config/calendar.md` has an uncommented `enabled: true` line:
+**Calendar:** If `config/calendar.md` has an uncommented `enabled: true` line:
 - Attempt to read today's calendar using the Google Calendar MCP tool
 - If the MCP tool is unavailable or errors: **skip silently** — do not display any error, do not mention calendar at all
 - If available and returns data: note today's meetings, prep needs, and deep work windows for use in action generation
+
+**Gmail:** If `config/identity.md` has an uncommented `gmail: true` line:
+- Attempt to scan recent inbox using Gmail MCP (search for unread or flagged messages from last 2 days)
+- If the MCP tool is unavailable or errors: **skip silently**
+- If available: note threads needing replies, follow-ups on outreach, and anything time-sensitive for use in action generation
+- Use in Action 2 (gap detection): "You emailed [person] 3 days ago with no reply. Follow up today."
 
 ### Step 3: Generate 3 SPECIFIC actions
 
