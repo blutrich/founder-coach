@@ -1,8 +1,22 @@
 {
   "name": "founder-coach",
   "description": "Daily AI coaching system for founders. One command (/coach), every morning, 3 actions. Streak tracking, decision log, LinkedIn drafting, and strategy framework with memory that compounds over time.",
+  "version": "1.0.0",
   "author": {
     "name": "Ofer Blutrich",
-    "email": "ofer@blutrich.com"
-  }
+    "email": "blutrich@gmail.com"
+  },
+  "homepage": "https://github.com/blutrich/founder-coach",
+  "repository": "https://github.com/blutrich/founder-coach",
+  "license": "MIT",
+  "keywords": [
+    "coaching",
+    "founders",
+    "productivity",
+    "accountability",
+    "streak",
+    "decisions",
+    "linkedin",
+    "strategy"
+  ]
 }
