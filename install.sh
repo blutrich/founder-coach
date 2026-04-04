@@ -11,10 +11,16 @@ echo "  🎯 Installing Founder Coach..."
 echo ""
 
 # Check if already installed
-if [ -d "$INSTALL_DIR" ]; then
+if [ -d "$INSTALL_DIR/.git" ]; then
   echo "  📦 Found existing install. Updating..."
   cd "$INSTALL_DIR"
+  git reset --hard --quiet
   git pull --quiet
+elif [ -d "$INSTALL_DIR" ]; then
+  echo "  📦 Found existing install (no git). Replacing..."
+  rm -rf "$INSTALL_DIR"
+  mkdir -p "$(dirname "$INSTALL_DIR")"
+  git clone --quiet https://github.com/blutrich/founder-coach.git "$INSTALL_DIR"
 else
   echo "  📦 Cloning from GitHub..."
   mkdir -p "$(dirname "$INSTALL_DIR")"
