@@ -212,11 +212,9 @@ MIT
 
 ## Credits
 
-Built by [Ofer Blutrich](https://linkedin.com/in/oferblutrich) — AI builder, former national climbing champion, part of the new technical class.
+Built by [Ofer Blutrich](https://linkedin.com/in/oferblutrich) — AI Product Builder at Base44. Former founder. Former national climbing champion. Built this because he's been in the founder seat and knows what's missing.
 
 Inspired by Seth Godin's "This Is Strategy" — systems thinking applied to personal execution.
-
-With the editorial assistance of Claude, who challenged the thinking but didn't do the building.
 
 ---
 
