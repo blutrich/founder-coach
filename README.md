@@ -82,7 +82,14 @@ The coach introduces itself, asks you 3 questions, and gives you Day 1's actions
 
 ### Trouble installing?
 
-If step 2 gives a cache error, paste this instead:
+**Windows users:** If you get a "Failed to finalize marketplace cache" or EPERM error, run this first:
+```
+rd /s /q %USERPROFILE%\.claude\plugins\marketplaces\founder-coach
+rd /s /q %USERPROFILE%\.claude\plugins\marketplaces\blutrich-founder-coach
+```
+Then try step 2 again.
+
+**Mac/Linux fallback:** If the marketplace command fails:
 ```bash
 git clone https://github.com/blutrich/founder-coach.git ~/.claude/plugins/marketplaces/founder-coach
 ```
