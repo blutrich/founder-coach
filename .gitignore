@@ -4,3 +4,19 @@ config/
 # Coaching state (contains founder profile, decisions, session history)
 # If using GIT_SYNC, use a PRIVATE repo and run: git add -f state/
 state/
+
+# Claude Code local state (not part of the plugin)
+.claude/cc10x/
+.claude/settings.json
+.claude/settings.local.json
+.claude/image-cache/
+.claude/agent-memory/
+.claude/agent-memory-local/
+
+# Development artifacts (not part of the plugin)
+docs/plans/
+docs/research/
+
+# OS files
+.DS_Store
+Thumbs.db
