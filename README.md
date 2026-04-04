@@ -67,11 +67,12 @@ Download from [claude.ai/code](https://claude.ai/code). Pick one:
 
 ### 2️⃣ Install the plugin
 
-Open Claude Code and paste this:
+Open Claude Code and paste these two commands:
 ```
 /plugin marketplace add blutrich/founder-coach
+/plugin install founder-coach@founder-coach
 ```
-Hit enter. Done.
+First one downloads it. Second one enables it.
 
 ### 3️⃣ Start coaching
 
