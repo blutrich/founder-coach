@@ -223,6 +223,10 @@ If that's you, install it. Run `/founder-coach` tomorrow morning. Tell me what h
 
 ---
 
+## Free & Open Source — Forever
+
+This is free. Open source. MIT licensed. No paid tiers. No "premium features." No bait-and-switch. The full coach with all 5 experts, Gmail, Calendar, LinkedIn, streaks, scoreboard — everything. Free forever.
+
 ## Privacy
 
 Everything is local. Config files, state files, and Claude Code memories all live on your machine. Nothing is sent to external services. No telemetry. No analytics. No data collection.
