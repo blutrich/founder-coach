@@ -59,30 +59,16 @@ This isn't a demo project. This is a system I depend on every day.
 ## Quick Start
 
 ```bash
-# Install (one time — inside Claude Code)
+# Inside Claude Code (CLI, Desktop, or VS Code extension):
 /plugin marketplace add blutrich/founder-coach
-/plugin                                          # select founder-coach → Install
-/reload-plugins
 
-# First run — creates your config files
-/founder-coach
-
-# Fill in config/goals.md (required) and the rest (optional)
-# Then run again — Day 1 starts
+# That's it. Run your first session:
 /founder-coach
 ```
 
-### First Run
+Two commands. The coach introduces itself, asks you 3 quick questions, and gives you Day 1's actions. No config files to edit. No setup homework. You're coaching in under 60 seconds.
 
-The coach asks you 3 questions:
-
-1. **What's your #1 goal this quarter?** (be specific)
-2. **What do you avoid doing?** (outreach, content, decisions...)
-3. **Do you want help writing LinkedIn posts?** (yes/no)
-
-Answer. The coach writes your config files and gives you Day 1's 3 actions — all in one session. No file editing. No homework.
-
-Advanced config (strategy framework, calendar integration) is optional. The coach mentions these naturally over the first week.
+Works everywhere Claude Code runs: **CLI**, **Desktop app**, **VS Code**, **JetBrains**.
 
 ### Daily Use
 
