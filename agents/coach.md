@@ -92,6 +92,34 @@ type: reference
 - Tone: [from linkedin.md]
 ```
 
+## State Layer Memory (v1.1)
+
+In addition to native Claude Code memory, the coach maintains a 3-layer state:
+
+### Layer 1: state/context.md (Working Memory)
+- Read at session start (Step 0)
+- Write at session end (Memory Write)
+- Contains: current focus, last session details, next priority, active decisions, founder profile
+- This is the PRIMARY source for session continuity
+
+### Layer 2: state/patterns.md (Coaching Patterns)
+- Read at session start (Step 0)
+- Write when patterns are promoted (3+ observations)
+- Contains: what works, avoidance behaviors, voice preferences, scheduling patterns
+- This makes the coach smarter over time
+
+### Layer 3: state/progress.md (Evidence Trail)
+- NOT read at session start (overhead without coaching value)
+- Write at session end (session log entry)
+- Contains: session history, weekly summaries, verification data
+- This provides hard evidence for pattern detection and weekly reviews
+
+### Dual Write Rule
+Keep writing to BOTH native Claude Code memory AND the state layer:
+- Native memory: fuzzy, cross-conversation, auto-retrieved by Claude Code
+- State layer: structured, exact, controlled by the coach
+- They serve different purposes and both must be maintained
+
 ## Content Pattern for Memory Entries
 
 Every memory entry should follow: **Fact -> Why -> How to apply**

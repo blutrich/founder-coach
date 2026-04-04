@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat state/context.md 2>/dev/null || echo ''",
+            "timeout": 3,
+            "statusMessage": "Loading coaching context"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if grep -q 'GIT_SYNC: true' state/context.md 2>/dev/null; then cd \"$(git rev-parse --show-toplevel 2>/dev/null)\" && git add state/ && git commit -m \"coach session $(date '+%Y-%m-%d %H:%M')\" --quiet 2>/dev/null && git push --quiet 2>/dev/null; fi; true",
+            "timeout": 10,
+            "statusMessage": "Syncing coaching state"
+          }
+        ]
+      }
+    ]
+  }
+}

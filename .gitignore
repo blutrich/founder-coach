@@ -1,0 +1,6 @@
+# Personal configuration (contains identity, LinkedIn profile, etc.)
+config/
+
+# Coaching state (contains founder profile, decisions, session history)
+# If using GIT_SYNC, use a PRIVATE repo and run: git add -f state/
+state/
