@@ -67,12 +67,11 @@ Download from [claude.ai/code](https://claude.ai/code). Pick one:
 
 ### 2️⃣ Install the plugin
 
-Open Claude Code and paste these two commands:
+Open Claude Code and paste:
 ```
 /plugin marketplace add blutrich/founder-coach
-/plugin install founder-coach@founder-coach
 ```
-First one downloads it. Second one enables it.
+One command. Downloads and installs it.
 
 ### 3️⃣ Start coaching
 
@@ -83,11 +82,11 @@ The coach introduces itself, asks you 3 questions, and gives you Day 1's actions
 
 ### Trouble installing?
 
-If step 2 gives an error, paste this instead:
+If step 2 gives a cache error, paste this instead:
 ```bash
 git clone https://github.com/blutrich/founder-coach.git ~/.claude/plugins/marketplaces/founder-coach
 ```
-Then inside Claude Code run `/plugin` (select founder-coach → Install), then `/founder-coach`.
+Then run `/plugin install founder-coach@founder-coach` and `/founder-coach`.
 
 Stuck? [Message me on LinkedIn](https://linkedin.com/in/oferblutrich).
 
