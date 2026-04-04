@@ -4,6 +4,20 @@
 
 After completing the session-specific steps (morning/evening/weekly) and updating streak.json, write memory updates. If memory files don't exist yet, create them from `templates/context.md`, `templates/patterns.md`, `templates/progress.md`.
 
+### Signal vs Noise Filter (apply to ALL memory writes)
+
+Before writing anything to memory, ask: "Would a future coaching session need this to make a better decision?" Only persist:
+- **Decisions** the founder made (and why)
+- **Patterns** observed (avoidance, completion timing, energy levels)
+- **Breakthroughs** — moments where the founder shifted perspective
+- **Action outcomes** — what was completed, what was skipped, and why
+
+Do NOT persist:
+- Mechanical session transcripts ("I read these files, then I generated actions")
+- Generic observations ("The founder seems motivated today")
+- Restatements of config data (goals are already in goals.md)
+- Anything the coach can re-derive from existing state files
+
 ### Write 1: Update state/context.md
 
 **After MORNING session:**

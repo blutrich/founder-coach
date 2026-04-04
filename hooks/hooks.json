@@ -1,5 +1,18 @@
 {
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$TOOL_INPUT\" | grep -q 'agents/coach.md'; then echo 'BLOCKED: agents/coach.md is the coach persona — do not edit it during sessions. If you want to suggest changes, write them to state/context.md ## Learnings instead.' && exit 1; fi; true",
+            "timeout": 2,
+            "statusMessage": "Checking protected files"
+          }
+        ]
+      }
+    ],
     "SessionStart": [
       {
         "matcher": "startup|resume|compact",
