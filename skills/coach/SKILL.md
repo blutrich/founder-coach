@@ -92,19 +92,50 @@ After ANY session (morning/evening/weekly), also run **Memory Write** from `refe
 
 ## FIRST_RUN Flow
 
-This flow runs when config/goals.md does not exist. It creates all config and state files from templates.
+This flow runs when config/goals.md does not exist. Interactive onboarding — ask, don't assign homework.
 
-### Step 1: Create config directory and copy template files
+### Step 1: Display welcome and ask questions
 
-Create the `config/` directory and copy these files into it:
+Display this message and wait for answers:
 
-- `config/goals.md` — copy from `templates/goals.md`
-- `config/identity.md` — copy from `templates/identity.md`
-- `config/strategy.md` — copy from `templates/strategy.md`
-- `config/linkedin.md` — copy from `templates/linkedin.md`
-- `config/calendar.md` — copy from `templates/calendar.md`
+```
+Welcome. I'm your founder coach.
 
-### Step 2: Create state directory and initialize state files
+Before we start, I need three things:
+
+1. What's your #1 goal this quarter? (be specific — "hit 10K MRR", "ship v2 by April", "get 50 users")
+2. What do you avoid doing? (outreach, content, hiring, hard decisions, shipping...)
+3. Do you want help writing LinkedIn posts? (yes/no)
+```
+
+Wait for the user to respond. They can answer all three at once or one at a time. Extract:
+- **goal**: their primary goal (required — if unclear, ask again)
+- **weakness**: what they avoid (optional — if not provided, leave blank)
+- **linkedin**: yes or no (optional — default no)
+
+If the user provides additional goals (up to 3), capture all of them.
+
+### Step 2: Create config files from answers
+
+Create the `config/` directory and write these files:
+
+**config/goals.md:**
+```
+# Your Goals
+goal_1: [their primary goal]
+# goal_2: [second goal if provided, commented if not]
+# goal_3: [third goal if provided, commented if not]
+```
+
+**config/identity.md** — copy from `templates/identity.md` but uncomment and fill the `weakness:` line if they provided one.
+
+**config/strategy.md** — copy from `templates/strategy.md` (untouched — they can fill this later).
+
+**config/linkedin.md** — copy from `templates/linkedin.md`. If they said yes to LinkedIn, uncomment `enabled: true`.
+
+**config/calendar.md** — copy from `templates/calendar.md` (untouched).
+
+### Step 3: Create state directory and initialize state files
 
 Create the `state/` directory and these files:
 
@@ -123,31 +154,16 @@ Create the `state/` directory and these files:
 - `state/scoreboard.md` — copy from `templates/scoreboard.md`
 - `state/decisions.md` — copy from `templates/decisions.md`
 
-### Step 3: Display the welcome message
+### Step 4: Confirm and proceed to first morning session
 
+Display:
 ```
-Welcome. I'm your founder coach.
-
-I've created your setup files in config/:
-
-  config/goals.md      — your 1-3 quarterly goals (REQUIRED)
-  config/strategy.md   — your 6-section strategy (Truth, Assertions, Alternatives, People, Money, Time)
-  config/identity.md   — who you are and what you avoid
-  config/linkedin.md   — if you want help shipping content
-  config/calendar.md   — if you want meeting-aware coaching
-
-Memory will build automatically after your first session.
-The coach gets smarter the more you use it.
-
-Open them. Uncomment the lines that matter. Be honest —
-especially about your weakness. That's where I'll push hardest.
-
-When you're ready, run /coach again. Day 1 starts then.
+Got it. Your config is set. Day 1 starts now.
 ```
 
-### Step 4: STOP
+Then immediately proceed to the **MORNING** session flow — do NOT stop. The founder's first `/founder-coach` should end with 3 actions, not homework.
 
-Do not proceed to any session. The user must fill in their config files first.
+**Advanced config note:** Strategy, calendar, and detailed identity are optional. The coach mentions them naturally over the first week: "Want meeting-aware coaching? Fill in config/calendar.md." This avoids overwhelming new users.
 
 ---
 
@@ -159,19 +175,16 @@ This flow runs when config/goals.md exists but has no active goals.
 
 Read the file and look for lines matching the pattern `goal_N:` (e.g., `goal_1:`, `goal_2:`, `goal_3:`) that do NOT start with `#`. Ignore markdown headers like `# Your Goals` — those are structural, not goal definitions.
 
-### Step 2: Check for uncommented goals
+### Step 2: Interactive goal collection
 
 If no `goal_N:` lines exist without a leading `#` (or the file is empty):
 
-Display this exact message:
-
+Display:
 ```
-Your goals are still commented out. Open config/goals.md and uncomment at least one goal. That's step one. I can't coach you toward nothing.
+I see you have config files but no active goals. What's your #1 goal this quarter?
 ```
 
-### Step 3: STOP
-
-Do not proceed to any session. The user must uncomment at least one goal first.
+Wait for the user to respond. Write their answer into `config/goals.md` as an uncommented `goal_1:` line. Then proceed to the **MORNING** session flow — do NOT stop.
 
 ---
 

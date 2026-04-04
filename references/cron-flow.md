@@ -28,12 +28,21 @@ Cron sessions do NOT modify `current_streak` or `total_sessions`. The streak and
 
 **Important:** Cron and interactive sessions must not run concurrently. If a cron job is scheduled, ensure it does not overlap with typical /coach usage times.
 
-### Step 3: Gap detection (passive)
+### Step 3: Gap detection and lint (passive)
 
 Analyze state without user interaction:
 - Read scoreboard: identify metrics behind target
 - Read context.md: identify how many days since last active session
 - Read decisions.md: identify decisions older than 7 days without review
+
+**Lint checks** (from `references/voice-guide.md ## Lint Patterns`):
+1. **Stale decisions:** Flag decisions in `state/decisions.md` older than 14 days without weekly review mention
+2. **Phantom patterns:** Check `state/patterns.md` entries are backed by 3+ progress.md session log entries. Demote unbacked patterns.
+3. **Goal drift:** If <30% of last 7 days' actions connect to stated goals, flag "goal drift"
+4. **Scoreboard decay:** If current week has >50% dashes by Wednesday, flag
+5. **Context staleness:** If last session is older than 3 work days, flag "you've been away"
+
+Write any lint findings to `state/context.md ## Next Session Priority` so the next interactive session surfaces them.
 
 ### Step 4: Update state/context.md
 

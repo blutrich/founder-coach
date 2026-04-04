@@ -74,17 +74,15 @@ This isn't a demo project. This is a system I depend on every day.
 
 ### First Run
 
-The coach creates 5 config files:
+The coach asks you 3 questions:
 
-| File | What | Required? |
-|------|------|-----------|
-| `config/goals.md` | Your 1-3 quarterly goals | Yes |
-| `config/identity.md` | Who you are, your strength and weakness | Recommended |
-| `config/strategy.md` | Your 6-section strategy framework (Truth, Assertions, Alternatives, People, Money, Time) | Recommended |
-| `config/linkedin.md` | Content creation config | Optional |
-| `config/calendar.md` | Google Calendar integration | Optional |
+1. **What's your #1 goal this quarter?** (be specific)
+2. **What do you avoid doing?** (outreach, content, decisions...)
+3. **Do you want help writing LinkedIn posts?** (yes/no)
 
-Open them. Uncomment the lines that matter. Be honest about your weakness. That's where the coach pushes hardest.
+Answer. The coach writes your config files and gives you Day 1's 3 actions — all in one session. No file editing. No homework.
+
+Advanced config (strategy framework, calendar integration) is optional. The coach mentions these naturally over the first week.
 
 ### Daily Use
 

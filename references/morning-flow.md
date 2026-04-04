@@ -11,6 +11,7 @@ Read every file below. If a file does not exist or is empty, skip it silently �
 - `config/strategy.md` — assertions, truth, alternatives, people, money, time
 - `config/linkedin.md` — check if `enabled: true` is uncommented
 - `config/calendar.md` — check if `enabled: true` is uncommented
+- `references/voice-guide.md` — signature phrases, anti-slop rules, reframing scripts, personality hooks
 - `state/streak.json` — current streak count and history
 - `state/scoreboard.md` — current week's progress
 - `state/decisions.md` — recent decisions
@@ -59,7 +60,11 @@ Identify what's behind schedule, what's been avoided, or what's slipping. Refere
 
 ### Step 4: Display output in coach voice
 
-Follow the personality and tone rules from `agents/coach.md`. Structure the output as:
+Follow the personality and tone rules from `agents/coach.md` and `references/voice-guide.md`. Use signature phrases naturally. Apply personality hooks based on context (Systems Thinker for ad-hoc problems, Pattern Caller for recurring behavior, Closer for deliberation, Realist for goal-action gaps). If founder's context.md shows avoidance patterns, use matching reframing scripts from voice-guide.md.
+
+**Before displaying:** Run the 5-point guardian self-check. If any check fails, rewrite.
+
+Structure the output as:
 
 1. **Streak line:** "Day {N}." followed by streak commentary.
    - Day 1: "Day 1. Let's go."

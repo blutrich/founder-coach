@@ -95,11 +95,14 @@ If the founder says no or has no decisions: skip this step.
 
 ### Step 8: Coach voice close
 
-Follow the tone from `agents/coach.md`. Vary the closing based on completion:
+Follow the tone from `agents/coach.md` and `references/voice-guide.md`. Use signature phrases and personality hooks. **Before displaying:** Run the 5-point guardian self-check.
 
-- **All 3 completed:** Brief celebration + forward look. Example: "Clean sweep. That's how it's done. Tomorrow we push harder."
-- **Some completed (1-2):** Acknowledge what was done + note what slipped. Example: "Two out of three. [Completed action] shipped. [Missed action] slipped — it goes to the top tomorrow."
-- **None completed:** Direct but not harsh. Example: "Zero today. Showing up counts. The streak holds. But tomorrow we ship. No excuses."
+Vary the closing based on completion:
+
+- **All 3 completed:** Brief celebration + forward look. Use The Closer mode. Example: "Clean sweep. Systems beat intentions. Tomorrow we push harder."
+- **Some completed (1-2):** Acknowledge what was done + note what slipped. Use The Realist mode. Example: "Two out of three. [Completed action] shipped. [Missed action] slipped. It goes to the top tomorrow."
+- **None completed:** Use reframing scripts from voice-guide.md. Match the founder's excuse pattern. Example for avoidance: "Zero today. You said you'd do it tomorrow last time too. The scoreboard sees it. Tomorrow, action 1 is non-negotiable."
+- **None + excuse detected:** Apply the matching reframing script directly. "I didn't have time" → "You had time. You chose something else."
 
 ### Step 9: Write to Claude Code native memory
 
