@@ -148,11 +148,48 @@ founder-coach/
 
 Note: `config/` and `state/` directories are created on first run. They are not included in the repository — each user gets their own.
 
-**Memory:** The coach writes to Claude Code's native memory directory with proper YAML frontmatter. Your coaching context is available across all Claude Code conversations, not just `/founder-coach`. Structured state (streak, scoreboard, decisions) lives in `state/` files for precision.
-
 **No dependencies.** No external services. No accounts. No subscriptions. Everything lives on your machine.
 
 **Calendar** is optional (Google Calendar via MCP). Enhances coaching but not required.
+
+---
+
+## Where Your Data Lives
+
+Everything is local. Here's exactly what gets created and where.
+
+### You control (config/)
+
+These files are yours. Edit them anytime.
+
+| File | What's in it | Created by |
+|------|-------------|------------|
+| `config/goals.md` | Your 1-3 quarterly goals | Onboarding questions |
+| `config/identity.md` | Your weakness, role, work days | Onboarding + you |
+| `config/strategy.md` | 6-section strategy framework | You (optional) |
+| `config/linkedin.md` | LinkedIn posting preferences | Onboarding + you |
+| `config/calendar.md` | Google Calendar connection | You (optional) |
+
+### Coach manages (state/)
+
+The coach reads and writes these every session. You can read them anytime, but don't edit them manually.
+
+| File | What's in it | Why it matters |
+|------|-------------|---------------|
+| `state/streak.json` | Streak counter + full session history | Tracks every morning/evening/weekly check-in |
+| `state/scoreboard.md` | Weekly targets vs actuals by day | Shows what you actually did, not what you planned |
+| `state/decisions.md` | Timestamped decision log with rationale | Catches you when you revisit decided things |
+| `state/context.md` | Working memory: last session, next priority, your profile | How the coach remembers between sessions |
+| `state/patterns.md` | Coaching patterns: what works, what you avoid | How the coach gets smarter over time |
+| `state/progress.md` | Session log + weekly history | Hard evidence for pattern detection |
+
+### Claude Code memory (automatic)
+
+The coach also writes to Claude Code's native memory (`~/.claude/` directory) with proper YAML frontmatter. This means your coaching context is available across **all** Claude Code conversations, not just `/founder-coach`. You don't need to manage this — it happens automatically.
+
+### Nothing leaves your machine
+
+No telemetry. No analytics. No external API calls. No accounts. Config, state, and memory all live on your local filesystem. The only network call is to Claude's API (which Claude Code handles), and optionally Google Calendar if you enable it.
 
 ---
 
