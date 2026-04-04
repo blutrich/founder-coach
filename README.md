@@ -59,9 +59,10 @@ This isn't a demo project. This is a system I depend on every day.
 ## Quick Start
 
 ```bash
-# Install (one time)
+# Install (one time — inside Claude Code)
 /plugin marketplace add blutrich/founder-coach
-/plugin install founder-coach@founder-coach
+/plugin                                          # select founder-coach → Install
+/reload-plugins
 
 # First run — creates your config files
 /coach
