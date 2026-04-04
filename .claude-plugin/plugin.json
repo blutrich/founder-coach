@@ -1,0 +1,8 @@
+{
+  "name": "founder-coach",
+  "description": "Daily AI coaching system for founders. One command (/coach), every morning, 3 actions. Streak tracking, decision log, LinkedIn drafting, and strategy framework with memory that compounds over time.",
+  "author": {
+    "name": "Ofer Blutrich",
+    "email": "ofer@blutrich.com"
+  }
+}
