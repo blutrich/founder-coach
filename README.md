@@ -163,7 +163,11 @@ founder-coach/
 │   ├── calendar.md       # Calendar config template
 │   ├── scoreboard.md     # Scoreboard template
 │   └── decisions.md      # Decision log template
-├── references/           # Static coaching knowledge
+├── references/           # Flows + static coaching knowledge (loaded one at a time)
+│   ├── morning-flow.md, evening-flow.md, weekly-flow.md, cron-flow.md
+│   ├── first-run.md      # Onboarding + setup-incomplete flows
+│   ├── streaks.md        # Streak rules, recovery, error handling
+│   ├── memory-operations.md, voice-guide.md
 │   ├── linkedin-guide.md # Post structure, voice calibration, anti-patterns
 │   └── godin-principles.md # 9 coaching principles
 ├── config/               # Your setup (created on first run, user-editable)

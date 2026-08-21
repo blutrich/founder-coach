@@ -6,7 +6,7 @@
   "agents": {
     "coach": {
       "file": "agents/coach.md",
-      "skill": "founder-coach:coach",
+      "skill": "founder-coach:founder-coach",
       "role": "orchestrator",
       "model": "opus",
       "routes_to": ["godin", "wood", "hormozi", "cagan", "voss"],

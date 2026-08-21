@@ -66,7 +66,7 @@ Find the current week section in `state/scoreboard.md`. For today's day-of-week 
   - If not completed: leave as `-`
 - Update the Weekly column totals (sum of the week so far)
 
-If no current week section exists, create one using the Scoreboard Initialization logic in `references/memory-operations.md`.
+If no current week section exists, create one using the Scoreboard Initialization logic in `${CLAUDE_PLUGIN_ROOT}/references/memory-operations.md`.
 
 ### Step 6: Prompt for decisions
 
@@ -95,7 +95,7 @@ If the founder says no or has no decisions: skip this step.
 
 ### Step 8: Coach voice close
 
-Follow the tone from `agents/coach.md` and `references/voice-guide.md`. Use signature phrases and personality hooks. **Before displaying:** Run the 5-point guardian self-check.
+Follow the tone from `${CLAUDE_PLUGIN_ROOT}/agents/coach.md` and `${CLAUDE_PLUGIN_ROOT}/references/voice-guide.md`. Use signature phrases and personality hooks. **Before displaying:** Run the 5-point guardian self-check.
 
 Vary the closing based on completion:
 
@@ -106,7 +106,7 @@ Vary the closing based on completion:
 
 ### Step 9: Write to Claude Code native memory
 
-- Write a `feedback` type memory noting what was completed vs not. This is pattern data for future coaching. Use the format from `agents/coach.md`:
+- Write a `feedback` type memory noting what was completed vs not. This is pattern data for future coaching. Use the format from `${CLAUDE_PLUGIN_ROOT}/agents/coach.md`:
   ```yaml
   ---
   type: feedback

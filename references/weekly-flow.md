@@ -81,7 +81,7 @@ Display as numbered list with brief rationale.
 
 If LinkedIn is enabled (`config/linkedin.md` has `enabled: true`):
 - "Want me to draft it now? I'll pull from this week's wins."
-- If the founder says yes: draft a LinkedIn post following `references/linkedin-guide.md` guidelines, using this week's actual achievements from the scoreboard and decisions as content.
+- If the founder says yes: draft a LinkedIn post following `${CLAUDE_PLUGIN_ROOT}/references/linkedin-guide.md` guidelines, using this week's actual achievements from the scoreboard and decisions as content.
 
 ### Step 3: Create new week section in state/scoreboard.md
 

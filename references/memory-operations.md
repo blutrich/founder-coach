@@ -2,7 +2,7 @@
 
 ## Memory Write (runs at end of every session)
 
-After completing the session-specific steps (morning/evening/weekly) and updating streak.json, write memory updates. If memory files don't exist yet, create them from `templates/context.md`, `templates/patterns.md`, `templates/progress.md`.
+After completing the session-specific steps (morning/evening/weekly) and updating streak.json, write memory updates. If memory files don't exist yet, create them from `${CLAUDE_PLUGIN_ROOT}/templates/context.md`, `${CLAUDE_PLUGIN_ROOT}/templates/patterns.md`, `${CLAUDE_PLUGIN_ROOT}/templates/progress.md`.
 
 ### Signal vs Noise Filter (apply to ALL memory writes)
 

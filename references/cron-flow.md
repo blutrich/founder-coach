@@ -9,7 +9,7 @@ Read:
 - `state/streak.json` — session counter and history
 - `state/scoreboard.md` — current week section
 
-If `state/context.md` does not exist: create it from `templates/context.md`.
+If `state/context.md` does not exist: create it from `${CLAUDE_PLUGIN_ROOT}/templates/context.md`.
 
 ### Step 2: Increment session count
 
@@ -35,7 +35,7 @@ Analyze state without user interaction:
 - Read context.md: identify how many days since last active session
 - Read decisions.md: identify decisions older than 7 days without review
 
-**Lint checks** (from `references/voice-guide.md ## Lint Patterns`):
+**Lint checks** (from `${CLAUDE_PLUGIN_ROOT}/references/voice-guide.md ## Lint Patterns`):
 1. **Stale decisions:** Flag decisions in `state/decisions.md` older than 14 days without weekly review mention
 2. **Phantom patterns:** Check `state/patterns.md` entries are backed by 3+ progress.md session log entries. Demote unbacked patterns.
 3. **Goal drift:** If <30% of last 7 days' actions connect to stated goals, flag "goal drift"

@@ -1,6 +1,6 @@
 # Coaching Principles
 
-Nine principles that guide the Founder Coach. Referenced by `agents/godin.md` for strategy sessions and weekly reviews.
+Nine principles that guide the Founder Coach. Referenced by `${CLAUDE_PLUGIN_ROOT}/agents/godin.md` for strategy sessions and weekly reviews.
 
 Inspired by Seth Godin's "This Is Strategy" — systems thinking applied to personal execution.
 

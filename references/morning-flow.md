@@ -11,13 +11,13 @@ Read every file below. If a file does not exist or is empty, skip it silently �
 - `config/strategy.md` — assertions, truth, alternatives, people, money, time
 - `config/linkedin.md` — check if `enabled: true` is uncommented
 - `config/calendar.md` — check if `enabled: true` is uncommented
-- `references/voice-guide.md` — signature phrases, anti-slop rules, reframing scripts, personality hooks
-- `agents/godin.md` — Seth Godin: strategy, systems, goal alignment
-- `agents/wood.md` — Jenny Wood: visibility, courage, hard conversations
-- `agents/hormozi.md` — Alex Hormozi: offers, pricing, sales, revenue
-- `agents/cagan.md` — Marty Cagan: product, discovery, shipping, validation
-- `agents/voss.md` — Chris Voss: hard conversations, DMs, follow-ups, negotiations
-- `references/linkedin-guide.md` — post structure, voice calibration, anti-patterns (read if LinkedIn action needed)
+- `${CLAUDE_PLUGIN_ROOT}/references/voice-guide.md` — signature phrases, anti-slop rules, reframing scripts, personality hooks
+- `${CLAUDE_PLUGIN_ROOT}/agents/godin.md` — Seth Godin: strategy, systems, goal alignment
+- `${CLAUDE_PLUGIN_ROOT}/agents/wood.md` — Jenny Wood: visibility, courage, hard conversations
+- `${CLAUDE_PLUGIN_ROOT}/agents/hormozi.md` — Alex Hormozi: offers, pricing, sales, revenue
+- `${CLAUDE_PLUGIN_ROOT}/agents/cagan.md` — Marty Cagan: product, discovery, shipping, validation
+- `${CLAUDE_PLUGIN_ROOT}/agents/voss.md` — Chris Voss: hard conversations, DMs, follow-ups, negotiations
+- `${CLAUDE_PLUGIN_ROOT}/references/linkedin-guide.md` — post structure, voice calibration, anti-patterns (read if LinkedIn action needed)
 - `state/streak.json` — current streak count and history
 - `state/scoreboard.md` — current week's progress
 - `state/decisions.md` — recent decisions
@@ -42,7 +42,7 @@ Read every file below. If a file does not exist or is empty, skip it silently �
 
 Generate exactly 3 actions. Each must be specific enough to complete in one sitting and must connect to a stated goal from `config/goals.md`.
 
-**Expert routing:** For each action, pick the expert whose domain matches the action type (see `agents/coach.md ## Expert Routing`). Write the action in that expert's voice. Tag each action with the expert name so the founder knows who's talking.
+**Expert routing:** For each action, pick the expert whose domain matches the action type (see `${CLAUDE_PLUGIN_ROOT}/agents/coach.md ## Expert Routing`). Write the action in that expert's voice. Tag each action with the expert name so the founder knows who's talking.
 
 **Action 1 — Highest priority from goals:**
 Pick the goal that moves the needle most today. Consider:
@@ -74,7 +74,7 @@ Identify what's behind schedule, what's been avoided, or what's slipping. Refere
 
 ### Step 4: Display output in coach voice
 
-Follow the personality and tone rules from `agents/coach.md` and `references/voice-guide.md`. Use signature phrases naturally. Apply personality hooks based on context (Systems Thinker for ad-hoc problems, Pattern Caller for recurring behavior, Closer for deliberation, Realist for goal-action gaps). If founder's context.md shows avoidance patterns, use matching reframing scripts from voice-guide.md.
+Follow the personality and tone rules from `${CLAUDE_PLUGIN_ROOT}/agents/coach.md` and `${CLAUDE_PLUGIN_ROOT}/references/voice-guide.md`. Use signature phrases naturally. Apply personality hooks based on context (Systems Thinker for ad-hoc problems, Pattern Caller for recurring behavior, Closer for deliberation, Realist for goal-action gaps). If founder's context.md shows avoidance patterns, use matching reframing scripts from voice-guide.md.
 
 **Before displaying:** Run the 5-point guardian self-check. If any check fails, rewrite.
 
@@ -101,7 +101,7 @@ Structure the output as:
 
 Right after displaying the 3 actions, write them to `state/context.md` `## Last Session → Actions given` as FULL TEXT. Do this NOW, before streak update — if the session crashes after this point, the evening session can still recover the actions.
 
-If `state/context.md` does not exist yet, create it from `templates/context.md` first.
+If `state/context.md` does not exist yet, create it from `${CLAUDE_PLUGIN_ROOT}/templates/context.md` first.
 
 ### Step 5: Update state/streak.json
 
@@ -120,7 +120,7 @@ Add a new entry to the `history` array:
 
 Update the streak counters using these rules:
 
-1. **Same-day re-run:** If `history` already has an entry for today with `"type": "morning"` — do NOT add a duplicate entry, do NOT increment any counters. The routing in Step 2 should have sent this to EVENING, but as a safety net: skip the update and do not double-count.
+1. **Same-day re-run:** If `history` already has an entry for today with `"type": "morning"` — do NOT add a duplicate entry, do NOT increment any counters. The session detection in SKILL.md Step 1 should have sent this to EVENING, but as a safety net: skip the update and do not double-count.
 
 2. **Continuing streak:** If `last_session` date was the previous work day (see **Weekend Handling** in SKILL.md), increment `current_streak` by 1.
 
@@ -134,7 +134,7 @@ Update the streak counters using these rules:
 
 ### Step 6: Write to Claude Code native memory
 
-- If this is the first session ever (`total_sessions` was 0 before this session): write a `user` type memory with the founder profile from `config/identity.md` (see `agents/coach.md` for the exact frontmatter format).
+- If this is the first session ever (`total_sessions` was 0 before this session): write a `user` type memory with the founder profile from `config/identity.md` (see `${CLAUDE_PLUGIN_ROOT}/agents/coach.md` for the exact frontmatter format).
 - Write or update a `project` type memory with the current active goals from `config/goals.md`.
 
 ### Step 7: STOP
