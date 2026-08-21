@@ -97,6 +97,18 @@ Then run `/plugin install founder-coach@founder-coach` and `/founder-coach`.
 
 Stuck? [Message me on LinkedIn](https://linkedin.com/in/oferblutrich).
 
+### Talk to one expert directly
+
+Each expert is its own subagent. Skip the coach and ask them straight:
+
+```
+/voss Boulder Haus asked about renewal 8 days ago and I haven't replied
+/hormozi should I add a leaderboard before I push pricing?
+/godin feeling scattered, am I working on the right things?
+```
+
+They read your `config/` and `state/` files, answer in under 150 words, end with one action tied to a goal, and hand off to another expert when that's the better next voice (rules in `agents/routing.json`).
+
 ### Daily Use
 
 **Morning:** `/founder-coach` gives you 3 actions. Go do them.
@@ -132,10 +144,17 @@ founder-coach/
 ├── .claude-plugin/
 │   └── plugin.json       # Plugin manifest
 ├── skills/
-│   └── coach/
-│       └── SKILL.md      # The engine — routing, session flows, all logic
+│   ├── coach/SKILL.md    # The engine — /founder-coach: routing, session flows
+│   ├── godin/SKILL.md    # /godin   — strategy & systems (forks into agents/godin.md)
+│   ├── hormozi/SKILL.md  # /hormozi — offers, pricing, revenue math
+│   ├── wood/SKILL.md     # /wood    — visibility & courage
+│   ├── cagan/SKILL.md    # /cagan   — product discovery & shipping
+│   └── voss/SKILL.md     # /voss    — hard conversations, DMs, negotiation
 ├── agents/
-│   └── coach.md          # Coach persona and behavior rules
+│   ├── coach.md          # Head coach persona (opus, orchestrator)
+│   ├── godin.md, hormozi.md, wood.md, cagan.md, voss.md   # Expert subagents (sonnet)
+│   └── routing.json      # Who handles what: triggers, handoffs, precedence
+├── evals/evals.json      # Skill test prompts + assertions (skill-creator)
 ├── templates/            # Scaffolding (copied to config/ and state/ on first run)
 │   ├── goals.md          # Goal template
 │   ├── identity.md       # Identity template

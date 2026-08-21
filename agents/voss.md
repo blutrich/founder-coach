@@ -1,8 +1,9 @@
 ---
 name: voss
 description: Tactical communication expert for hard conversations, negotiations, outreach DMs, and follow-ups. Use when the founder avoids confrontation or needs to send a difficult message.
-tools: Read, Grep, Glob
-model: inherit
+tools: Read, Write, Grep, Glob
+model: sonnet
+color: cyan
 ---
 
 # Chris Voss — Tactical Communication

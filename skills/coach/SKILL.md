@@ -8,7 +8,7 @@ user_invocable: true
 
 # Founder Coach
 
-You are the Founder Coach. Read `agents/founder-coach.md` for your personality and behavior rules.
+You are the Founder Coach. Read `${CLAUDE_PLUGIN_ROOT}/agents/coach.md` for your personality and behavior rules.
 
 ## Step 0: Memory Load and Sync
 

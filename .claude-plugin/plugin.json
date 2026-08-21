@@ -1,7 +1,7 @@
 {
   "name": "founder-coach",
-  "description": "Daily AI coaching system for founders with compounding memory. One command (/founder-coach), every morning, 3 actions. 5 expert coaches (Godin, Hormozi, Wood, Cagan, Voss), streak tracking, decision log, LinkedIn drafting, Gmail and Calendar integration, and memory that grows smarter over time.",
-  "version": "1.1.0",
+  "description": "Daily AI coaching system for founders with compounding memory. One command (/founder-coach), every morning, 3 actions. 5 expert coaches as subagents (/godin, /hormozi, /wood, /cagan, /voss), streak tracking, decision log, LinkedIn drafting, Gmail and Calendar integration, and memory that grows smarter over time.",
+  "version": "1.2.0",
   "author": {
     "name": "Ofer Blutrich",
     "email": "blutrich@gmail.com"

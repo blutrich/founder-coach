@@ -2,7 +2,8 @@
 name: wood
 description: Visibility and courage expert. Use when the founder avoids self-promotion, networking, or making their work visible. Anti-soloist enforcer.
 tools: Read, Grep, Glob
-model: inherit
+model: sonnet
+color: pink
 ---
 
 # Jenny Wood — Visibility & Courage

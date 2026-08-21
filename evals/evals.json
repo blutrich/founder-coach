@@ -1,0 +1,67 @@
+{
+  "skill_name": "founder-coach expert skills",
+  "evals": [
+    {
+      "id": 0,
+      "skill": "voss",
+      "prompt": "Boulder Haus asked about renewal 8 days ago and I still haven't replied. Help me write the message.",
+      "expected_output": "A ready-to-send message under 80 words using label/mirror/calibrated question, naming the 6-8 day delay from state files, day-3 and day-7 follow-ups, one action tied to goal_1.",
+      "files": [
+        "fixture/"
+      ],
+      "assertions": [
+        "Contains a ready-to-send message under 80 words",
+        "Message uses a label ('It seems like'/'It sounds like') before any ask",
+        "Message contains a calibrated How/What question",
+        "Provides day-3 and day-7 follow-ups, at least one no-oriented ('given up')",
+        "Names the delay (6-8 days) as an avoidance pattern from state files",
+        "Response is under 200 words (150 target, allow slack)",
+        "Cites at least one concrete date, number, or decision from the fixture config/state files",
+        "Ends with exactly one Action that names a goal from config/goals.md",
+        "Does not ask the founder an open question like 'what would you like' or 'how can I help'",
+        "No banned phrases: 'hope you are well', 'I hope this finds you', 'leverage', 'unlock', 'journey', 'excited to'"
+      ]
+    },
+    {
+      "id": 1,
+      "skill": "hormozi",
+      "prompt": "I think I should add a leaderboard feature so gyms see more value before I push pricing. Thoughts?",
+      "expected_output": "Refuses the feature detour citing the 2026-08-04 decision, states the offer via value equation, does the MRR math (1.2K to 5K at 300 EUR = ~13 more gyms), prescribes conversation volume, likely HANDOFF to voss or cagan.",
+      "files": [
+        "fixture/"
+      ],
+      "assertions": [
+        "Says no to the leaderboard / names it as a pricing-avoidance pattern",
+        "References the 2026-08-04 no-new-features decision",
+        "Shows MRR math: 1.2K to 5K at 300 EUR, roughly 13 more gyms",
+        "Prescribes a specific outreach volume (number of conversations) today",
+        "Includes a HANDOFF line to voss or cagan",
+        "Response is under 200 words (150 target, allow slack)",
+        "Cites at least one concrete date, number, or decision from the fixture config/state files",
+        "Ends with exactly one Action that names a goal from config/goals.md",
+        "Does not ask the founder an open question like 'what would you like' or 'how can I help'",
+        "No banned phrases: 'hope you are well', 'I hope this finds you', 'leverage', 'unlock', 'journey', 'excited to'"
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "godin",
+      "prompt": "Feeling scattered. Am I working on the right things?",
+      "expected_output": "Restates goal_1, names the drift (analytics dashboard day, 0 user conversations, built instead of outreach) with dates, applies two Godin principles, tells the founder what to stop.",
+      "files": [
+        "fixture/"
+      ],
+      "assertions": [
+        "Restates goal_1 (5K MRR by Sep 30)",
+        "Names the drift with a dated example (analytics dashboard 08-17, 0 user conversations, skipped outreach)",
+        "Applies at least two named Godin principles",
+        "Tells the founder a specific thing to stop doing",
+        "Response is under 200 words (150 target, allow slack)",
+        "Cites at least one concrete date, number, or decision from the fixture config/state files",
+        "Ends with exactly one Action that names a goal from config/goals.md",
+        "Does not ask the founder an open question like 'what would you like' or 'how can I help'",
+        "No banned phrases: 'hope you are well', 'I hope this finds you', 'leverage', 'unlock', 'journey', 'excited to'"
+      ]
+    }
+  ]
+}

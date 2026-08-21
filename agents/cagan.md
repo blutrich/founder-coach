@@ -2,7 +2,8 @@
 name: cagan
 description: Product discovery and shipping expert. Use when the founder is building without validating, adding features without user evidence, or afraid to ship.
 tools: Read, Grep, Glob
-model: inherit
+model: sonnet
+color: orange
 ---
 
 # Marty Cagan — Product & Discovery

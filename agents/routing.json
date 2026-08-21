@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0",
+  "description": "Routing graph between founder-coach agents. The coach is the only entry point; it tags each action with an expert and may hand off to it. Experts return to the coach, never to each other directly, except where handoffs are listed.",
+  "entry": "coach",
+  "agents": {
+    "coach": {
+      "file": "agents/coach.md",
+      "skill": "founder-coach:coach",
+      "role": "orchestrator",
+      "model": "opus",
+      "routes_to": ["godin", "wood", "hormozi", "cagan", "voss"],
+      "default_for": ["morning", "evening", "weekly", "cron"],
+      "rules": [
+        "Every morning action is tagged with exactly one expert",
+        "Weekly review always routes strategy alignment to godin",
+        "If founder weakness in state/patterns.md matches an expert domain, weight that expert higher",
+        "Evening close may use any expert based on what happened"
+      ]
+    },
+    "godin": {
+      "file": "agents/godin.md",
+      "skill": "founder-coach:godin",
+      "role": "strategy",
+      "model": "sonnet",
+      "triggers": ["strategy", "direction", "goal drift", "alignment", "what not to do", "smallest viable audience", "weekly review", "am I building the right thing"],
+      "handoff": {
+        "cagan": "strategy is clear but the product decision is the blocker",
+        "hormozi": "direction is set and the gap is revenue"
+      }
+    },
+    "wood": {
+      "file": "agents/wood.md",
+      "skill": "founder-coach:wood",
+      "role": "visibility",
+      "model": "sonnet",
+      "triggers": ["self-promotion", "visibility", "networking", "imposter syndrome", "linkedin resistance", "my work speaks for itself", "content avoidance"],
+      "handoff": {
+        "voss": "the avoided thing is a specific message or conversation to send"
+      }
+    },
+    "hormozi": {
+      "file": "agents/hormozi.md",
+      "skill": "founder-coach:hormozi",
+      "role": "revenue",
+      "model": "sonnet",
+      "triggers": ["offer", "pricing", "revenue", "sales", "nobody's buying", "leads", "outreach volume", "MRR"],
+      "handoff": {
+        "voss": "the offer is defined and the next step is a specific DM, email, or negotiation",
+        "cagan": "nobody is buying because the product has no validated value"
+      }
+    },
+    "cagan": {
+      "file": "agents/cagan.md",
+      "skill": "founder-coach:cagan",
+      "role": "product",
+      "model": "sonnet",
+      "triggers": ["should I build this", "validation", "discovery", "scope creep", "feature creep", "shipping anxiety", "prioritization", "success metrics", "building without talking to users"],
+      "handoff": {
+        "hormozi": "product is validated and the gap is monetization",
+        "voss": "discovery requires reaching out to users the founder is avoiding"
+      }
+    },
+    "voss": {
+      "file": "agents/voss.md",
+      "skill": "founder-coach:voss",
+      "role": "communication",
+      "model": "sonnet",
+      "triggers": ["hard conversation", "DM", "cold outreach", "follow-up", "negotiation", "difficult feedback", "ask for testimonial", "ask for referral", "unanswered email"],
+      "handoff": {
+        "hormozi": "the message is written but the offer inside it is weak"
+      }
+    }
+  },
+  "precedence": ["voss", "hormozi", "cagan", "wood", "godin"],
+  "precedence_note": "When multiple experts match, pick the most concrete/actionable one first (a message to send beats a strategy reflection). Godin is the fallback for weekly and for anything abstract.",
+  "fallback": "godin"
+}

@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "founder-coach",
-      "description": "Daily AI coaching system for founders. One command (/coach), every morning, 3 actions. Streak tracking, decision log, LinkedIn drafting, and strategy framework with memory that compounds over time.",
-      "version": "1.1.0",
+      "description": "Daily AI coaching system for founders. One command (/founder-coach), every morning, 3 actions. Five expert subagents (Godin, Hormozi, Wood, Cagan, Voss) invocable as /godin, /hormozi, /wood, /cagan, /voss. Streak tracking, decision log, LinkedIn drafting, memory that compounds over time.",
+      "version": "1.2.0",
       "source": "./",
       "author": {
         "name": "Ofer Blutrich",
