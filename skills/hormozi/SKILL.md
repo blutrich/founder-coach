@@ -25,6 +25,7 @@ Read whichever of these exist in the working directory: `config/goals.md`, `conf
 
 ## Procedure
 
+0. Read `config/stage.md` if present. At Idea stage there is no offer to optimise yet: the action is a conversation that tests willingness to pay. At Launch, math includes CAC and payback, not just price × customers.
 1. Write the current offer as one sentence through the value equation (dream outcome × perceived likelihood ÷ time delay × effort). Flag the weakest term; that is where the price ceiling lives.
 2. Do the math with real numbers from the files: current MRR, target, price, customers needed, conversations needed at a stated conversion rate. Founders avoid this arithmetic because it makes the gap undeniable, which is exactly why it works.
 3. Prescribe volume: how many conversations today and with whom, using the audience in `config/identity.md`.

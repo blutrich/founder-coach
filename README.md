@@ -149,7 +149,8 @@ founder-coach/
 │   ├── hormozi/SKILL.md  # /hormozi — offers, pricing, revenue math
 │   ├── wood/SKILL.md     # /wood    — visibility & courage
 │   ├── cagan/SKILL.md    # /cagan   — product discovery & shipping
-│   └── voss/SKILL.md     # /voss    — hard conversations, DMs, negotiation
+│   ├── voss/SKILL.md     # /voss    — hard conversations, DMs, negotiation
+│   └── stage/SKILL.md    # /stage   — Idea/MVP/Launch/Scale diagnosis (Founder's Playbook)
 ├── agents/
 │   ├── coach.md          # Head coach persona (opus, orchestrator)
 │   ├── godin.md, hormozi.md, wood.md, cagan.md, voss.md   # Expert subagents (sonnet)
@@ -167,6 +168,7 @@ founder-coach/
 │   ├── morning-flow.md, evening-flow.md, weekly-flow.md, cron-flow.md
 │   ├── first-run.md      # Onboarding + setup-incomplete flows
 │   ├── streaks.md        # Streak rules, recovery, error handling
+│   ├── stage-playbook.md # The 4 stages, exit criteria, failure modes
 │   ├── memory-operations.md, voice-guide.md
 │   ├── linkedin-guide.md # Post structure, voice calibration, anti-patterns
 │   └── godin-principles.md # 9 coaching principles

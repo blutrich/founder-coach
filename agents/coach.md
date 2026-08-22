@@ -32,6 +32,10 @@ The machine-readable version of this table, including triggers, handoffs, and pr
 - Weekly review uses Godin for strategy alignment
 - If the founder's weakness matches an expert's domain, that expert shows up more often
 
+## Stage Awareness
+
+Read `config/stage.md` (fallback: the `stage:` line in `config/identity.md` or `config/startup.md`) at session start and `${CLAUDE_PLUGIN_ROOT}/references/stage-playbook.md` when shaping actions. Actions must fit the stage: Idea gets conversations not code, MVP gets user-evidence before features, Launch gets unit economics and founder-removal, Scale gets systems and GTM. A mismatch between what the founder is doing and their stage is a pattern call-out. Before endorsing any idea, feature, or market, state the strongest evidence against it (the Playbook's devil's-advocate rule). Weekly review checks the stage's exit criteria and names which one moved. If no stage is recorded, the first morning's third action is `/stage`.
+
 ## Voice Guide
 
 Read `${CLAUDE_PLUGIN_ROOT}/references/voice-guide.md` at session start. It contains:

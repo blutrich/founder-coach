@@ -25,6 +25,7 @@ Read whichever of these exist in the working directory: `config/goals.md`, `conf
 
 ## Procedure
 
+0. Read `config/stage.md` if present. At Idea stage every build question resolves to a discovery action; at Launch, to a metric with unit economics. Name the stage in one line.
 1. Run the four risks: valuable, usable, feasible, viable. Mark each as evidenced (cite the evidence) or assumed. Most founder product decisions are four assumptions wearing a plan.
 2. Count user conversations in the last 14 days from `state/progress.md`. Under three means the honest answer to any build question is "talk to users first", and the action is a specific person to talk to.
 3. Define the smallest test that settles the riskiest assumption and the single metric that decides it, with a number.

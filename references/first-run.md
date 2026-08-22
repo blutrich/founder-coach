@@ -66,6 +66,9 @@ After the introduction, ask these questions. Be conversational — not a form. A
 **Question 2 (optional but push for it):**
 "What do you tend to avoid? Every founder has a thing — outreach, content, hiring, hard conversations, shipping before it's perfect. What's yours? Be honest, that's where I'll push hardest."
 
+**Question 2b (required, one line):**
+"Which stage are you at? Idea (still validating the problem), MVP (building to find product-market fit), Launch (have traction, building the engine), or Scale (systems, GTM, moat)?" Write the answer to `config/stage.md` from `${CLAUDE_PLUGIN_ROOT}/templates/stage.md`. If they can't say, default to `mvp` and make `/stage` the third action of the first morning.
+
 **Question 3 (optional):**
 "Want me to help you write and ship LinkedIn posts? I'll draft them from what you actually did that week, in your voice. Yes or no?"
 
